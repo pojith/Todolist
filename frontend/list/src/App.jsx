@@ -6,6 +6,7 @@ import { Home } from './components/Home';
 import { Menu } from './components/Menu';
 import { useState } from 'react';
 import { createContext } from 'react';
+import { Ownhook } from './components/Ownhook';
 
 export const upname = createContext()
 
@@ -25,6 +26,7 @@ export const upname = createContext()
         <Route path="/h" element={<Home />} />
         <Route path="/m" element={<Menu />} />
         <Route path="/c" element={<Contact />} />
+        <Route path='/o' element={<Ownhook />} />
       </Routes>
       </upname.Provider>
     </Router>
